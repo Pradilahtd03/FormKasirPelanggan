@@ -23,7 +23,27 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+-- Table structure for table `barang`
 --
+
+CREATE TABLE `barang` (
+  `kode_barang` varchar(6) NOT NULL,
+  `nama_barang` varchar(25) NOT NULL,
+  `jenis_barang` varchar(20) NOT NULL,
+  `harga_beli` int(11) NOT NULL,
+  `harga_jual` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumpling data for table 'barang'
+--
+
+INSERT INTO 'barang' ('kode_barang', 'nama_barang, 'jenis_barang', 'harga_beli', 'harga_jual') Values
+('K1', 'pensil', 'Barang Produksi', '2000', '3000'),
+
+-- --------------------------------------------------------
+
+--  
 -- Table structure for table `kasir`
 --
 
@@ -70,6 +90,9 @@ INSERT INTO `pelanggan` (`id`, `nmplg`, `jenis`, `telepon`, `alamat`) VALUES
 --
 
 --
+-- Indexes for table 'barang' 
+--
+ALTER TABLE 'barang'
 -- Indexes for table `kasir`
 --
 ALTER TABLE `kasir`
