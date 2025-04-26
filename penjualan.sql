@@ -38,7 +38,7 @@ CREATE TABLE `barang` (
 -- Dumpling data for table 'barang'
 --
 
-INSERT INTO 'barang' ('kode_barang', 'nama_barang, 'jenis_barang', 'harga_beli', 'harga_jual') Values
+INSERT INTO 'barang' ('kode_barang', 'nama_barang', 'jenis_barang', 'harga_beli', 'harga_jual') Values
 ('K1', 'pensil', 'Barang Produksi', '2000', '3000');
 
 -- --------------------------------------------------------
